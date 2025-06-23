@@ -49,7 +49,7 @@ io.on("connection", (socket) => {
 });
 
 // Listen on a dynamic port for deployment or default to 8000 locally
-const PORT = process.env.PORT || 8000;
-server.listen(PORT, () => {
+//const PORT = process.env.PORT || 8000;
+server.listen("https://videocall-backend-g28p.onrender.com", () => {
   console.log(`Server listening on port ${PORT}`);
 });
